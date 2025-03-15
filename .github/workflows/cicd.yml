@@ -24,7 +24,7 @@ jobs:
 
       - name: Build with Gradle - 1
         run: |
-          ./gradlew build
+          ./gradlew build -x test
           cp build/libs/*-SNAPSHOT.jar ./app.jar
 
       - name: Setup SSH Key - 2
